@@ -1,0 +1,42 @@
+
+GET http://localhost:8000/api/v1/users
+User-Agent: Nigger
+
+
+###
+POST http://localhost:8000/api/v1/users
+Content-Type: application/json
+
+{
+    "name": "Kent",
+    "gender": "male",
+    "roles": [
+      "student",
+      "admin"
+    ],
+    "email": "kent@salman.com",
+    "password": "pssss"
+}
+
+###
+PUT http://localhost:8000/api/v1/users/0362a35-9cb5-4e1c-8a77-86df1ebeee7c
+Content-Type: application/json
+
+{
+  "name":"Salman $ayyed",
+  "gender":"male",
+  "roles":[],
+  "email":"",
+  "password":""
+}
+
+###
+DELETE http://localhost:8000/api/v1/users/c42b0b4f-9480-4469-996e-dc213ea290d9
+
+### 
+PATCH http://localhost:8000/api/v1/users/{user_id}
+Content-Type: application/json
+
+{
+  "name":"Salman"
+}
